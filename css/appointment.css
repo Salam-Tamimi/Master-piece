@@ -1,0 +1,151 @@
+:root {
+
+    --primary: #0d51ac;
+    --light: #B3CDE6;
+    --dark: #FE8325;
+}
+*{
+    direction: rtl;
+}
+.contain{
+    width: 90%;
+    margin: 2%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    height: 50%;
+    flex-wrap: wrap;
+    row-gap: 2%;
+    column-gap: 1%;
+    padding-top: 2%;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+
+.doctorscard{
+    background-color: rgba(179, 205, 230,0.7);
+    border: 1px solid rgba(39, 37, 180,0.5);
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px rgba(39, 37, 180,0.5);
+    min-width: 200px;
+    max-width: 400px;
+    max-height: 650px;
+}
+
+
+
+.nextbtn, .prevbtn{
+    border: none;
+    background: none;
+    margin-top: 1.5%;
+}
+.pagenum{
+    margin-top: 3.5%;
+    color: var(--primary);
+}
+
+.btn.btn-primary
+{
+    color: #FFFFFF;
+    background-color: #FE8325;
+    border-color: #FE8325;
+    /* width: 50%; */
+}
+.btns{
+    width: 80%;
+    justify-content: space-between;
+    position: relative;
+}
+.btn.btn-primary:hover {
+    scale: 1.05;
+    background-color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    outline: none;
+}
+.btn-info:hover{
+    scale: 1.05;
+    box-shadow: 0px 5px 8px #9f9fa7;
+    background-color: var(--primary);
+}
+
+.btn-link:hover{
+    scale: 1.1;
+}
+
+.pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Agdasima', sans-serif;
+    display: inline-flex;
+    position: relative;
+}
+.pagination li a.page-link{
+    color: #fff;
+    background: transparent;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 33px;
+    padding: 0;
+    margin: 0 7px;
+    border: none;
+    border-radius: 0;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: all 0.1s ease 0s;
+}
+.pagination li:first-child a.page-link,
+.pagination li:last-child a.page-link{
+    font-size: 23px;
+    line-height: 37px;
+}
+.pagination li a.page-link:hover,
+.pagination li a.page-link:focus,
+.pagination li.active a.page-link:hover,
+.pagination li.active a.page-link{
+    color: #fff;
+    background: transparent;
+}
+.pagination li a.page-link:before{
+    content: '';
+    background-color: #2f3542;
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
+    transform-origin: center center;
+    transform: perspective(75px) rotateX(30deg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:hover:before,
+.pagination li a.page-link:focus:before,
+.pagination li.active a.page-link:hover:before,
+.pagination li.active a.page-link:before{
+    background-color: var(--dark);
+    box-shadow: -3px -3px rgba(0,0,0,0.2);
+    transform: perspective(75px) rotateX(-30deg);
+}
+
+.demo{
+    margin-top: 2%;
+    margin-right: -3%;
+}
+@media only screen and (max-width: 480px){
+    .pagination{
+        font-size: 0;
+        display: inline-block;
+    }
+    .pagination li{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 15px;
+    }
+}

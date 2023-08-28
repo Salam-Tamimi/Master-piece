@@ -1,0 +1,46 @@
+:root {
+
+    --primary: #0d51ac;
+    --light: #B3CDE6;
+    --dark: #FE8325;
+}
+*{
+    direction: rtl;
+}
+
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-outline-primary:hover
+ {
+    color: #FFFFFF;
+    background-color: #FE8325;
+    border-color: #FE8325;
+}
+.btn.btn-primary:hover {
+    scale: 1.05;
+    box-shadow: 0px 5px 8px #ddc7b6;
+    background-color: #dc7221;
+}
+.card{
+ box-shadow: 5px 10px 15px rgba(156, 156, 241, 0.8);   
+}
+
+.active{
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 8px #b6bfdd;
+    border-color: #b6bfdd;
+}
+.searchbtn{
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(241, 143, 78, 0.4);
+    border-color: #b6bfdd;
+    border-radius: 10px;
+}

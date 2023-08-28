@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+        <title>سلامتك - صفحة المستشفى</title>
+
+            <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+        <script type="text/javascript">
+            window._wpemojiSettings = {
+                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+                "ext": ".png",
+                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+                "svgExt": ".svg",
+                "source": {
+                    "concatemoji": "https:\/\/truemarkets3d.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3"
+                }
+            };
+            /*! This file is auto-generated */
+            !function(i, n) {
+                var o, s, e;
+                function c(e) {
+                    try {
+                        var t = {
+                            supportTests: e,
+                            timestamp: (new Date).valueOf()
+                        };
+                        sessionStorage.setItem(o, JSON.stringify(t))
+                    } catch (e) {}
+                }
+                function p(e, t, n) {
+                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+                    e.fillText(t, 0, 0);
+                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
+                      , r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+                    e.fillText(n, 0, 0),
+                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                    return t.every(function(e, t) {
+                        return e === r[t]
+                    })
+                }
+                function u(e, t, n) {
+                    switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
+                    }
+                    return !1
+                }
+                function f(e, t, n) {
+                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : i.createElement("canvas")
+                      , a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    })
+                      , o = (a.textBaseline = "top",
+                    a.font = "600 32px Arial",
+                    {});
+                    return e.forEach(function(e) {
+                        o[e] = t(a, e, n)
+                    }),
+                    o
+                }
+                function t(e) {
+                    var t = i.createElement("script");
+                    t.src = e,
+                    t.defer = !0,
+                    i.head.appendChild(t)
+                }
+                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
+                s = ["flag", "emoji"],
+                n.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                },
+                e = new Promise(function(e) {
+                    i.addEventListener("DOMContentLoaded", e, {
+                        once: !0
+                    })
+                }
+                ),
+                new Promise(function(t) {
+                    var n = function() {
+                        try {
+                            var e = JSON.parse(sessionStorage.getItem(o));
+                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
+                                return e.supportTests
+                        } catch (e) {}
+                        return null
+                    }();
+                    if (!n) {
+                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
+                            try {
+                                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));"
+                                  , r = new Blob([e],{
+                                    type: "text/javascript"
+                                })
+                                  , a = new Worker(URL.createObjectURL(r),{
+                                    name: "wpTestEmojiSupports"
+                                });
+                                return void (a.onmessage = function(e) {
+                                    c(n = e.data),
+                                    a.terminate(),
+                                    t(n)
+                                }
+                                )
+                            } catch (e) {}
+                        c(n = f(s, u, p))
+                    }
+                    t(n)
+                }
+                ).then(function(e) {
+                    for (var t in e)
+                        n.supports[t] = e[t],
+                        n.supports.everything = n.supports.everything && n.supports[t],
+                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
+                    n.DOMReady = !1,
+                    n.readyCallback = function() {
+                        n.DOMReady = !0
+                    }
+                }).then(function() {
+                    return e
+                }).then(function() {
+                    var e;
+                    n.supports.everything || (n.readyCallback(),
+                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
+                    t(e.wpemoji)))
+                }))
+            }((window,
+            document), window._wpemojiSettings);
+        </script>
+        <style type="text/css">
+            img.wp-smiley, img.emoji {
+                display: inline !important;
+                border: none !important;
+                box-shadow: none !important;
+                height: 1em !important;
+                width: 1em !important;
+                margin: 0 0.07em !important;
+                vertical-align: -0.1em !important;
+                background: none !important;
+                padding: 0 !important;
+            }
+            /*** Service ***/
+                .service-item {
+                    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+                    border: 1px solid transparent;
+                    transition: .6s;
+                }
+
+                .service-item:hover {
+                    box-shadow: 3px 3px 10px rgba(57, 137, 230, 0.4);
+                    border-color: #0d51ac;
+                    scale: 1.03;
+                    font-size:x-large ;
+                    color:#FE8325;
+                }
+
+                .service-item .service-icon,
+                .service-item .service-btn {
+                    margin: -1px 0 0 -1px;
+                    width: 65px;
+                    height: 65px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFFFFF;
+                    background: #0d51ac;
+                    border-radius: 5px 0;
+                    transition: .5s;
+                }
+
+                .service-item .service-btn {
+                    margin: -1px -1px 0 0;
+                    border-radius: 0 5px;
+                    opacity: 0;
+                }
+
+                .service-item:hover .service-btn {
+                    opacity: 1;
+                }
+
+                .container-xxl {
+                width: 100%;
+                padding-right: var(--bs-gutter-x, .75rem);
+                padding-left: var(--bs-gutter-x, .75rem);
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 7%;
+               }
+        </style>
+        <link rel='stylesheet' id='wp-block-library-css' href='https://truemarkets3d.net/wp-includes/css/dist/block-library/style.min.css?ver=6.3' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-active-filters-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/active-filters.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-add-to-cart-form-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/add-to-cart-form.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-packages-style-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/packages-style.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-all-products-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-products.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-all-reviews-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-reviews.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-attribute-filter-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/attribute-filter.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-breadcrumbs-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/breadcrumbs.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-catalog-sorting-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/catalog-sorting.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-customer-account-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/customer-account.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-featured-category-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-category.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-featured-product-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-product.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-mini-cart-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-price-filter-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/price-filter.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-add-to-cart-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-add-to-cart.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-button-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-button.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-categories-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-categories.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-image-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-image-gallery-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image-gallery.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-query-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-query.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-results-count-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-results-count.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-reviews-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-reviews.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-sale-badge-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sale-badge.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-search-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-search.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-sku-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sku.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-stock-indicator-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-stock-indicator.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-summary-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-summary.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-rating-filter-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/rating-filter.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-reviews-by-category-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-category.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-reviews-by-product-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-product.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-product-details-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-details.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-single-product-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/single-product.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-stock-filter-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/stock-filter.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-cart-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/cart.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-checkout-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/checkout.css?ver=10.6.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='wc-blocks-style-mini-cart-contents-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart-contents.css?ver=10.6.5' type='text/css' media='all'/>
+        <style id='classic-theme-styles-inline-css' type='text/css'>
+            /*! This file is auto-generated */
+            .wp-block-button__link {
+                color: #fff;
+                background-color: #32373c;
+                border-radius: 9999px;
+                box-shadow: none;
+                text-decoration: none;
+                padding: calc(.667em + 2px) calc(1.333em + 2px);
+                font-size: 1.125em
+            }
+
+            .wp-block-file__button {
+                background: #32373c;
+                color: #fff;
+                text-decoration: none
+            }
+        </style>
+        <style id='global-styles-inline-css' type='text/css'>
+            body {
+                --wp--preset--color--black: #000000;
+                --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                --wp--preset--color--white: #ffffff;
+                --wp--preset--color--pale-pink: #f78da7;
+                --wp--preset--color--vivid-red: #cf2e2e;
+                --wp--preset--color--luminous-vivid-orange: #ff6900;
+                --wp--preset--color--luminous-vivid-amber: #fcb900;
+                --wp--preset--color--light-green-cyan: #7bdcb5;
+                --wp--preset--color--vivid-green-cyan: #00d084;
+                --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                --wp--preset--color--vivid-cyan-blue: #0693e3;
+                --wp--preset--color--vivid-purple: #9b51e0;
+                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+                --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+                --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+                --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+                --wp--preset--font-size--small: 13px;
+                --wp--preset--font-size--medium: 20px;
+                --wp--preset--font-size--large: 36px;
+                --wp--preset--font-size--x-large: 42px;
+                --wp--preset--spacing--20: 0.44rem;
+                --wp--preset--spacing--30: 0.67rem;
+                --wp--preset--spacing--40: 1rem;
+                --wp--preset--spacing--50: 1.5rem;
+                --wp--preset--spacing--60: 2.25rem;
+                --wp--preset--spacing--70: 3.38rem;
+                --wp--preset--spacing--80: 5.06rem;
+                --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+                --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+                --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+                --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+                --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+            }
+
+            :where(.is-layout-flex) {
+                gap: 0.5em;
+            }
+
+            :where(.is-layout-grid) {
+                gap: 0.5em;
+            }
+
+            body .is-layout-flow > .alignleft {
+                float: left;
+                margin-inline-start: 0;margin-inline-end: 2em;}
+
+            body .is-layout-flow > .alignright {
+                float: right;
+                margin-inline-start: 2em;margin-inline-end: 0;}
+
+            body .is-layout-flow > .aligncenter {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            body .is-layout-constrained > .alignleft {
+                float: left;
+                margin-inline-start: 0;margin-inline-end: 2em;}
+
+            body .is-layout-constrained > .alignright {
+                float: right;
+                margin-inline-start: 2em;margin-inline-end: 0;}
+
+            body .is-layout-constrained > .aligncenter {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+                max-width: var(--wp--style--global--content-size);
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            body .is-layout-constrained > .alignwide {
+                max-width: var(--wp--style--global--wide-size);
+            }
+
+            body .is-layout-flex {
+                display: flex;
+            }
+
+            body .is-layout-flex {
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            body .is-layout-flex > * {
+                margin: 0;
+            }
+
+            body .is-layout-grid {
+                display: grid;
+            }
+
+            body .is-layout-grid > * {
+                margin: 0;
+            }
+
+            :where(.wp-block-columns.is-layout-flex) {
+                gap: 2em;
+            }
+
+            :where(.wp-block-columns.is-layout-grid) {
+                gap: 2em;
+            }
+
+            :where(.wp-block-post-template.is-layout-flex) {
+                gap: 1.25em;
+            }
+
+            :where(.wp-block-post-template.is-layout-grid) {
+                gap: 1.25em;
+            }
+
+            .has-black-color {
+                color: var(--wp--preset--color--black) !important;
+            }
+
+            .has-cyan-bluish-gray-color {
+                color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+
+            .has-white-color {
+                color: var(--wp--preset--color--white) !important;
+            }
+
+            .has-pale-pink-color {
+                color: var(--wp--preset--color--pale-pink) !important;
+            }
+
+            .has-vivid-red-color {
+                color: var(--wp--preset--color--vivid-red) !important;
+            }
+
+            .has-luminous-vivid-orange-color {
+                color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-amber-color {
+                color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+
+            .has-light-green-cyan-color {
+                color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+
+            .has-vivid-green-cyan-color {
+                color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+
+            .has-pale-cyan-blue-color {
+                color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+
+            .has-vivid-cyan-blue-color {
+                color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+
+            .has-vivid-purple-color {
+                color: var(--wp--preset--color--vivid-purple) !important;
+            }
+
+            .has-black-background-color {
+                background-color: var(--wp--preset--color--black) !important;
+            }
+
+            .has-cyan-bluish-gray-background-color {
+                background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+
+            .has-white-background-color {
+                background-color: var(--wp--preset--color--white) !important;
+            }
+
+            .has-pale-pink-background-color {
+                background-color: var(--wp--preset--color--pale-pink) !important;
+            }
+
+            .has-vivid-red-background-color {
+                background-color: var(--wp--preset--color--vivid-red) !important;
+            }
+
+            .has-luminous-vivid-orange-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-amber-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+
+            .has-light-green-cyan-background-color {
+                background-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+
+            .has-vivid-green-cyan-background-color {
+                background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+
+            .has-pale-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+
+            .has-vivid-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+
+            .has-vivid-purple-background-color {
+                background-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+
+            .has-black-border-color {
+                border-color: var(--wp--preset--color--black) !important;
+            }
+
+            .has-cyan-bluish-gray-border-color {
+                border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+
+            .has-white-border-color {
+                border-color: var(--wp--preset--color--white) !important;
+            }
+
+            .has-pale-pink-border-color {
+                border-color: var(--wp--preset--color--pale-pink) !important;
+            }
+
+            .has-vivid-red-border-color {
+                border-color: var(--wp--preset--color--vivid-red) !important;
+            }
+
+            .has-luminous-vivid-orange-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-amber-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+
+            .has-light-green-cyan-border-color {
+                border-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+
+            .has-vivid-green-cyan-border-color {
+                border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+
+            .has-pale-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+
+            .has-vivid-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+
+            .has-vivid-purple-border-color {
+                border-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+
+            .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+                background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+            }
+
+            .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+                background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+            }
+
+            .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+            }
+
+            .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+                background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+            }
+
+            .has-cool-to-warm-spectrum-gradient-background {
+                background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+            }
+
+            .has-blush-light-purple-gradient-background {
+                background: var(--wp--preset--gradient--blush-light-purple) !important;
+            }
+
+            .has-blush-bordeaux-gradient-background {
+                background: var(--wp--preset--gradient--blush-bordeaux) !important;
+            }
+
+            .has-luminous-dusk-gradient-background {
+                background: var(--wp--preset--gradient--luminous-dusk) !important;
+            }
+
+            .has-pale-ocean-gradient-background {
+                background: var(--wp--preset--gradient--pale-ocean) !important;
+            }
+
+            .has-electric-grass-gradient-background {
+                background: var(--wp--preset--gradient--electric-grass) !important;
+            }
+
+            .has-midnight-gradient-background {
+                background: var(--wp--preset--gradient--midnight) !important;
+            }
+
+            .has-small-font-size {
+                font-size: var(--wp--preset--font-size--small) !important;
+            }
+
+            .has-medium-font-size {
+                font-size: var(--wp--preset--font-size--medium) !important;
+            }
+
+            .has-large-font-size {
+                font-size: var(--wp--preset--font-size--large) !important;
+            }
+
+            .has-x-large-font-size {
+                font-size: var(--wp--preset--font-size--x-large) !important;
+            }
+
+            .wp-block-navigation a:where(:not(.wp-element-button)) {
+                color: inherit;
+            }
+
+            :where(.wp-block-post-template.is-layout-flex) {
+                gap: 1.25em;
+            }
+
+            :where(.wp-block-post-template.is-layout-grid) {
+                gap: 1.25em;
+            }
+
+            :where(.wp-block-columns.is-layout-flex) {
+                gap: 2em;
+            }
+
+            :where(.wp-block-columns.is-layout-grid) {
+                gap: 2em;
+            }
+
+            .wp-block-pullquote {
+                font-size: 1.5em;
+                line-height: 1.6;
+            }
+        </style>
+        <link rel='stylesheet' id='woocommerce-layout-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.0.1' type='text/css' media='all'/>
+        <link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.0.1' type='text/css' media='only screen and (max-width: 768px)'/>
+        <link rel='stylesheet' id='woocommerce-general-css' href='https://truemarkets3d.net/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.0.1' type='text/css' media='all'/>
+        <style id='woocommerce-inline-inline-css' type='text/css'>
+            .woocommerce form .form-row .required {
+                visibility: visible;
+            }
+        </style>
+        <link rel='stylesheet' id='manufacturing-industry-fonts-css' href='//fonts.googleapis.com/css?family=Roboto%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C800%2C800i%2C900%2C900i' type='text/css' media='all'/>
+        <link rel='stylesheet' id='bootstrap-css-css' href='https://truemarkets3d.net/wp-content/themes/manufacturing-industry-old/assets/css/bootstrap.css?ver=6.3' type='text/css' media='all'/>
+        <link rel='stylesheet' id='manufacturing-industry-basic-style-css' href='https://truemarkets3d.net/wp-content/themes/manufacturing-industry-old/style.css?ver=6.3' type='text/css' media='all'/>
+        <style id='manufacturing-industry-basic-style-inline-css' type='text/css'>
+            #inner-pages-header {
+                background-image: url(https://truemarkets3d.net/wp-content/uploads/2022/01/arab-jordan-investment-bank-3d-virtual-tour-by-matterport-scanner.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            .header-overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: #000;
+                opacity: 0.3;
+            }
+
+            .page-template-custom-home-page .menu-section {
+                position: static;
+                background: rgb(22 29 45 / 60%);
+            }
+
+            #features-section {
+                margin-top: 20px;
+            }
+            *{
+                direction: rtl !important;
+                text-align: right !important;
+            }
+
+        </style>
+        <link rel='stylesheet' id='font-awesome-css-css' href='https://truemarkets3d.net/wp-content/themes/manufacturing-industry-old/assets/css/fontawesome-all.css?ver=6.3' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-lazyload-css' href='https://truemarkets3d.net/wp-content/plugins/elementor/assets/css/modules/lazyload/frontend.min.css?ver=3.15.2' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-frontend-css' href='https://truemarkets3d.net/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.15.2' type='text/css' media='all'/>
+        <link rel='stylesheet' id='swiper-css' href='https://truemarkets3d.net/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-post-8254-css' href='https://truemarkets3d.net/wp-content/uploads/elementor/css/post-8254.css?ver=1680790186' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-pro-css' href='https://truemarkets3d.net/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.15.1' type='text/css' media='all'/>
+        <link rel='stylesheet' id='font-awesome-5-all-css' href='https://truemarkets3d.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.15.2' type='text/css' media='all'/>
+        <link rel='stylesheet' id='font-awesome-4-shim-css' href='https://truemarkets3d.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.15.2' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-global-css' href='https://truemarkets3d.net/wp-content/uploads/elementor/css/global.css?ver=1680790216' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-post-8262-css' href='https://truemarkets3d.net/wp-content/uploads/elementor/css/post-8262.css?ver=1684324690' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-post-8219-css' href='https://truemarkets3d.net/wp-content/uploads/elementor/css/post-8219.css?ver=1681047295' type='text/css' media='all'/>
+        <link rel='stylesheet' id='elementor-post-22-css' href='https://truemarkets3d.net/wp-content/uploads/elementor/css/post-22.css?ver=1681121049' type='text/css' media='all'/>
+        <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.3' type='text/css' media='all'/>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/themes/manufacturing-industry-old/assets/js/bootstrap.js?ver=6.3' id='bootstrap-js-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.15.2' id='font-awesome-4-shim-js'></script>
+        <link rel="https://api.w.org/" href="https://truemarkets3d.net/wp-json/"/>
+        <link rel="alternate" type="application/json" href="https://truemarkets3d.net/wp-json/wp/v2/posts/348"/>
+        <meta name="generator" content="WordPress 6.3"/>
+        <meta name="generator" content="WooCommerce 8.0.1"/>
+        <link rel="canonical" href="https://truemarkets3d.net/arab-jordan-investment-bank-3d-virtual-tour-teaser-video-location/"/>
+        <link rel='shortlink' href='https://truemarkets3d.net/?p=348'/>
+        <link rel="alternate" type="application/json+oembed" href="https://truemarkets3d.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftruemarkets3d.net%2Farab-jordan-investment-bank-3d-virtual-tour-teaser-video-location%2F"/>
+        <link rel="alternate" type="text/xml+oembed" href="https://truemarkets3d.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftruemarkets3d.net%2Farab-jordan-investment-bank-3d-virtual-tour-teaser-video-location%2F&#038;format=xml"/>
+        <noscript>
+            <style>
+                .woocommerce-product-gallery {
+                    opacity: 1 !important;
+                }
+            </style>
+        </noscript>
+        <meta name="generator" content="Elementor 3.15.2; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+        <style type="text/css">
+            .recentcomments a {
+                display: inline !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        </style>
+        <style type="text/css" id="custom-background-css">
+            body.custom-background {
+                background-color: #ffffff;
+            }
+        </style>
+        <meta name="generator" content="Powered by Slider Revolution 6.6.15 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+        <link rel="icon" href="https://truemarkets3d.net/wp-content/uploads/2022/10/Logo-60x60.png" sizes="32x32"/>
+        <link rel="icon" href="https://truemarkets3d.net/wp-content/uploads/2022/10/Logo.png" sizes="192x192"/>
+        <link rel="apple-touch-icon" href="https://truemarkets3d.net/wp-content/uploads/2022/10/Logo.png"/>
+        <meta name="msapplication-TileImage" content="https://truemarkets3d.net/wp-content/uploads/2022/10/Logo.png"/>
+        <script>
+            function setREVStartSize(e) {
+                //window.requestAnimationFrame(function() {
+                window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+                window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+                try {
+                    var pw = document.getElementById(e.c).parentNode.offsetWidth, newh;
+                    pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
+                    e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                    e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                    e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                    e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                    e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                    e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                    e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                    if (e.layout === "fullscreen" || e.l === "fullscreen")
+                        newh = Math.max(e.mh, window.RSIH);
+                    else {
+                        e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                        for (var i in e.rl)
+                            if (e.gw[i] === undefined || e.gw[i] === 0)
+                                e.gw[i] = e.gw[i - 1];
+                        e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                        e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                        for (var i in e.rl)
+                            if (e.gh[i] === undefined || e.gh[i] === 0)
+                                e.gh[i] = e.gh[i - 1];
+
+                        var nl = new Array(e.rl.length), ix = 0, sl;
+                        e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                        e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                        e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                        e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                        for (var i in e.rl)
+                            nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                        sl = nl[0];
+                        for (var i in nl)
+                            if (sl > nl[i] && nl[i] > 0) {
+                                sl = nl[i];
+                                ix = i;
+                            }
+                        var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                        newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                    }
+                    var el = document.getElementById(e.c);
+                    if (el !== null && el)
+                        el.style.height = newh + "px";
+                    el = document.getElementById(e.c + "_wrapper");
+                    if (el !== null && el) {
+                        el.style.height = newh + "px";
+                        el.style.display = "block";
+                    }
+                } catch (e) {
+                    console.log("Failure at Presize of Slider:" + e)
+                }
+                //});
+            }
+            ;</script>
+    </head>
+    <body class="post-template-default single single-post postid-348 single-format-standard custom-background wp-custom-logo wp-embed-responsive theme-manufacturing-industry-old woocommerce-no-js has-sidebar e-lazyload elementor-default elementor-template-full-width elementor-kit-8254 elementor-page elementor-page-348 elementor-page-22">
+
+        <div data-elementor-type="single-post" data-elementor-id="22" class="elementor elementor-22 elementor-location-single post-348 post type-post status-publish format-standard has-post-thumbnail hentry category-3d-banks-in-jordan" data-elementor-post-type="elementor_library">
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-49c926a elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="49c926a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;background_motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;background_motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:80}},&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-e-bg-lazyload="">
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9fce317" data-id="9fce317" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-2cadf75 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="2cadf75" data-element_type="widget" data-widget_type="theme-post-title.default">
+                                <div class="elementor-widget-container">
+                                    <style>
+                                        /*! elementor - v3.15.0 - 09-08-2023 */
+                                        .elementor-heading-title {
+                                            padding: 0;
+                                            margin: 0;
+                                            line-height: 1
+                                        }
+
+                                        .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                                            color: inherit;
+                                            font-size: inherit;
+                                            line-height: inherit
+                                        }
+
+                                        .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                            font-size: 15px
+                                        }
+
+                                        .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                            font-size: 19px
+                                        }
+
+                                        .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                            font-size: 29px
+                                        }
+
+                                        .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                            font-size: 39px
+                                        }
+
+                                        .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                            font-size: 59px
+                                        }
+                                    </style>
+                                    <h1 class="elementor-heading-title elementor-size-xl"style="margin-top:-5%;color:black;">مستشفى إربد التخصصي</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-8199ad0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8199ad0" data-element_type="section">
+              
+            <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-53236121 elementor-widget elementor-widget-heading" data-id="53236121" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container" style="margin-right:13%;">
+                            <h2 class="elementor-heading-title elementor-size-default"style="margin-top:-5%;color:black;">جولة افتراضية</h2>
+                        </div>
+                        </div>
+                        <div class="elementor-element elementor-element-3d473682 elementor-widget elementor-widget-theme-post-content" data-id="3d473682" data-element_type="widget" data-widget_type="theme-post-content.default">
+                        <div class="elementor-widget-container">
+                            <div data-elementor-type="wp-post" data-elementor-id="5435" class="elementor elementor-5435" data-elementor-post-type="post">
+                                            <section class="elementor-section elementor-top-section elementor-element elementor-element-c21427b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c21427b" data-element_type="section">
+                                                 <div class="elementor-container elementor-column-gap-default">
+                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-67617b8" data-id="67617b8" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                                <div class="elementor-element elementor-element-49d8018 elementor-widget elementor-widget-html" data-id="49d8018" data-element_type="widget" data-widget_type="html.default">
+                                                                <div class="elementor-widget-container">
+                                                                <iframe width="100%" height="550" src="https://my.matterport.com/show/?m=vcETg2uLhLa&amp;cloudEdit=1&amp;sr=3.06,.19&amp;ss=471" allow="vr" id="showcase_iframe"></iframe>		
+                                                                </div>
+                                                                </div>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                            </section>
+                                    </div>
+                        </div>
+                    </div>
+            </div>
+
+            </section>
+
+
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-fa077c2 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="fa077c2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;background_motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;background_motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:80}},&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-e-bg-lazyload="">
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1fc8c38" data-id="1fc8c38" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-ed4d568 elementor-widget elementor-widget-heading" data-id="ed4d568" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h3 class="elementor-heading-title elementor-size-default"style="color:black;">فيديو</h3>
+                                </div>
+                            </div>
+                            <!-- <div class="elementor-element elementor-element-b022a8f elementor-widget elementor-widget-video" data-id="b022a8f" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtu.be\/UpfsvvWUGoA&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default"> -->
+                                <div class="elementor-element elementor-element-b022a8f elementor-widget elementor-widget-video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/P6JGD8dNCB0?si=0r3jSgfahKhg0aMZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                <div class="elementor-widget-container">
+                                    <style>
+                                        /*! elementor - v3.15.0 - 09-08-2023 */
+                                        .elementor-widget-video .elementor-widget-container {
+                                            overflow: hidden;
+                                            transform: translateZ(0)
+                                        }
+
+                                        .elementor-widget-video .elementor-wrapper {
+                                            aspect-ratio: var(--video-aspect-ratio)
+                                        }
+
+                                        .elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video {
+                                            height: 100%;
+                                            width: 100%;
+                                            display: flex;
+                                            border: none;
+                                            background-color: #000
+                                        }
+
+                                        @supports not (aspect-ratio: 1/1) {
+                                            .elementor-widget-video .elementor-wrapper {
+                                                position:relative;
+                                                overflow: hidden;
+                                                height: 0;
+                                                padding-bottom: calc(100% / var(--video-aspect-ratio))
+                                            }
+
+                                            .elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                left: 0
+                                            }
+                                        }
+
+                                        .elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            background-size: cover;
+                                            background-position: 50%
+                                        }
+
+                                        .elementor-widget-video .elementor-custom-embed-image-overlay {
+                                            cursor: pointer;
+                                            text-align: center
+                                        }
+
+                                        .elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i {
+                                            opacity: 1
+                                        }
+
+                                        .elementor-widget-video .elementor-custom-embed-image-overlay img {
+                                            display: block;
+                                            width: 100%;
+                                            aspect-ratio: var(--video-aspect-ratio);
+                                            -o-object-fit: cover;
+                                            object-fit: cover;
+                                            -o-object-position: center center;
+                                            object-position: center center
+                                        }
+
+                                        @supports not (aspect-ratio: 1/1) {
+                                            .elementor-widget-video .elementor-custom-embed-image-overlay {
+                                                position:relative;
+                                                overflow: hidden;
+                                                height: 0;
+                                                padding-bottom: calc(100% / var(--video-aspect-ratio))
+                                            }
+
+                                            .elementor-widget-video .elementor-custom-embed-image-overlay img {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                left: 0
+                                            }
+                                        }
+
+                                        .elementor-widget-video .e-hosted-video .elementor-video {
+                                            -o-object-fit: cover;
+                                            object-fit: cover
+                                        }
+
+                                        .e-con-inner>.elementor-widget-video,.e-con>.elementor-widget-video {
+                                            width: var(--container-widget-width);
+                                            --flex-grow: var(--container-widget-flex-grow)
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-df0d007" data-id="df0d007" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-37a7214 elementor-widget elementor-widget-heading" data-id="37a7214" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h3 class="elementor-heading-title elementor-size-default"style="color:black;">الموقع</h3>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-ad88cc7 elementor-widget elementor-widget-google_maps" data-id="ad88cc7" data-element_type="widget" data-widget_type="google_maps.default">
+                                <div class="elementor-widget-container">
+                                    <style>
+                                        /*! elementor - v3.15.0 - 09-08-2023 */
+                                        .elementor-widget-google_maps .elementor-widget-container {
+                                            overflow: hidden
+                                        }
+
+                                        .elementor-widget-google_maps .elementor-custom-embed {
+                                            line-height: 0
+                                        }
+
+                                        .elementor-widget-google_maps iframe {
+                                            height: 300px
+                                        }
+                                    </style>
+                                    <div class="elementor-custom-embed">
+                                        <iframe loading="lazy" style="width:560px;height:315px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.713812319381!2d35.86525832444094!3d32.53378967376627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c76f239ac97a1%3A0x2efa0d63c5fff59a!2z2YXYs9iq2LTZgdmJINil2LHYqNivINin2YTYqtiu2LXYtdmK!5e0!3m2!1sar!2sjo!4v1693261639985!5m2!1sar!2sjo"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+<!--  *********** sections *********** -->
+        <div class="container-xxl py-6 sections "><hr>
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">الأقسام</div>
+                    <h2 class="mb-5 text-center">أقسام المستشفى </h2>
+                </div>
+        <div class="row g-4 mx-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp"  data-wow-delay="0.1s">
+                <div class="service-item rounded h-100">
+                    <div class="d-flex justify-content-between">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
+                        </div>
+                        <a class="service-btn" href="">
+                            <i class="fa fa-link fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="mb-3">قسم العيون</h4>
+                        <span>احجز موعد عند طبيب عيون</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded h-100">
+                    <div class="d-flex justify-content-between">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
+                        </div>
+                        <a class="service-btn" href="">
+                            <i class="fa fa-link fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="mb-3">قسم العظام</h4>
+                        <span>احجز موعد عند طبيب عظام</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item rounded h-100">
+                    <div class="d-flex justify-content-between">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
+                        </div>
+                        <a class="service-btn" href="">
+                            <i class="fa fa-link fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="mb-3">قسم الأشعة</h4>
+                        <span>احجز موعد في قسم الأشعة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded h-100">
+                    <div class="d-flex justify-content-between">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
+                        </div>
+                        <a class="service-btn" href="">
+                            <i class="fa fa-link fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="mb-3">قسم القلب</h4>
+                        <span>احجز موعد عند طبيب قلب</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded h-100">
+                    <div class="d-flex justify-content-between">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
+                        </div>
+                        <a class="service-btn" href="">
+                            <i class="fa fa-link fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="mb-3">قسم الجراحة</h4>
+                        <span>احجز موعد عند طبيب جراحة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item rounded h-100">
+                    <div class="d-flex justify-content-between">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
+                        </div>
+                        <a class="service-btn" href="">
+                            <i class="fa fa-link fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="mb-3">قسم الولادة</h4>
+                        <span>احجز موعد في قسم الولادة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <script>
+            window.RS_MODULES = window.RS_MODULES || {};
+            window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+            window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+            window.RS_MODULES.defered = true;
+            window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+            window.RS_MODULES.type = 'compiled';
+        </script>
+        <script type='text/javascript'>
+            const lazyloadRunObserver = ()=>{
+                const dataAttribute = 'data-e-bg-lazyload';
+                const lazyloadBackgrounds = document.querySelectorAll(`[${dataAttribute}]:not(.lazyloaded)`);
+                const lazyloadBackgroundObserver = new IntersectionObserver((entries)=>{
+                    entries.forEach((entry)=>{
+                        if (entry.isIntersecting) {
+                            let lazyloadBackground = entry.target;
+                            const lazyloadSelector = lazyloadBackground.getAttribute(dataAttribute);
+                            if (lazyloadSelector) {
+                                lazyloadBackground = entry.target.querySelector(lazyloadSelector);
+                            }
+                            if (lazyloadBackground) {
+                                lazyloadBackground.classList.add('lazyloaded');
+                            }
+                            lazyloadBackgroundObserver.unobserve(entry.target);
+                        }
+                    }
+                    );
+                }
+                ,{
+                    rootMargin: '100px 0px 100px 0px'
+                });
+                lazyloadBackgrounds.forEach((lazyloadBackground)=>{
+                    lazyloadBackgroundObserver.observe(lazyloadBackground);
+                }
+                );
+            }
+            ;
+            const events = ['DOMContentLoaded', 'elementor/lazyload/observe', ];
+            events.forEach((event)=>{
+                document.addEventListener(event, lazyloadRunObserver);
+            }
+            );
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400%7CBarlow+Condensed:300%2C500%2C400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css">
+        <script type="text/javascript">
+            (function() {
+                var c = document.body.className;
+                c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+                document.body.className = c;
+            }
+            )();
+        </script>
+        <script>
+            if (typeof revslider_showDoubleJqueryError === "undefined") {
+                function revslider_showDoubleJqueryError(sliderID) {
+                    console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");
+                    console.log("To fix this, you can:");
+                    console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");
+                    console.log("2. Find the double jQuery.js inclusion and remove it");
+                    return "Double Included jQuery Library";
+                }
+            }
+        </script>
+        <link rel="preload" as="font" id="rs-icon-set-fa-icon-woff" type="font/woff2" crossorigin="anonymous" href="https://truemarkets3d.net/wp-content/plugins/revslider/public/assets/fonts/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0" media="all"/>
+        <link rel="stylesheet" property="stylesheet" id="rs-icon-set-fa-icon-css" href="https://truemarkets3d.net/wp-content/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all"/>
+        <link rel='stylesheet' id='e-animations-css' href='https://truemarkets3d.net/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.15.2' type='text/css' media='all'/>
+        <link rel='stylesheet' id='rs-plugin-settings-css' href='https://truemarkets3d.net/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.15' type='text/css' media='all'/>
+        <style id='rs-plugin-settings-inline-css' type='text/css'>
+            #rs-demo-id {
+            }
+        </style>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.15' defer async id='tp-tools-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.15' defer async id='revmin-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.0.1' id='jquery-blockui-js'></script>
+        <script type='text/javascript' id='wc-add-to-cart-js-extra'>
+            /* <![CDATA[ */
+            var wc_add_to_cart_params = {
+                "ajax_url": "\/wp-admin\/admin-ajax.php",
+                "wc_ajax_url": "\/?wc-ajax=%%endpoint%%",
+                "i18n_view_cart": "View cart",
+                "cart_url": "https:\/\/truemarkets3d.net\/cart\/",
+                "is_cart": "",
+                "cart_redirect_after_add": "no"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.0.1' id='wc-add-to-cart-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.0.1' id='js-cookie-js'></script>
+        <script type='text/javascript' id='woocommerce-js-extra'>
+            /* <![CDATA[ */
+            var woocommerce_params = {
+                "ajax_url": "\/wp-admin\/admin-ajax.php",
+                "wc_ajax_url": "\/?wc-ajax=%%endpoint%%"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.0.1' id='woocommerce-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/themes/manufacturing-industry-old/assets/js/navigation.js?ver=2.1.2' id='manufacturing-industry-navigation-jquery-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/themes/manufacturing-industry-old/assets/js/jquery.superfish.js?ver=6.3' id='jquery-superfish-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/comment-reply.min.js?ver=6.3' id='comment-reply-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.15.1' id='elementor-pro-webpack-runtime-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.15.2' id='elementor-webpack-runtime-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.15.2' id='elementor-frontend-modules-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+        <script id="wp-i18n-js-after" type="text/javascript">
+            wp.i18n.setLocaleData({
+                'text direction\u0004ltr': ['ltr']
+            });
+        </script>
+        <script id="elementor-pro-frontend-js-before" type="text/javascript">
+            var ElementorProFrontendConfig = {
+                "ajaxurl": "https:\/\/truemarkets3d.net\/wp-admin\/admin-ajax.php",
+                "nonce": "771cce99a7",
+                "urls": {
+                    "assets": "https:\/\/truemarkets3d.net\/wp-content\/plugins\/elementor-pro\/assets\/",
+                    "rest": "https:\/\/truemarkets3d.net\/wp-json\/"
+                },
+                "shareButtonsNetworks": {
+                    "facebook": {
+                        "title": "Facebook",
+                        "has_counter": true
+                    },
+                    "twitter": {
+                        "title": "Twitter"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "has_counter": true
+                    },
+                    "pinterest": {
+                        "title": "Pinterest",
+                        "has_counter": true
+                    },
+                    "reddit": {
+                        "title": "Reddit",
+                        "has_counter": true
+                    },
+                    "vk": {
+                        "title": "VK",
+                        "has_counter": true
+                    },
+                    "odnoklassniki": {
+                        "title": "OK",
+                        "has_counter": true
+                    },
+                    "tumblr": {
+                        "title": "Tumblr"
+                    },
+                    "digg": {
+                        "title": "Digg"
+                    },
+                    "skype": {
+                        "title": "Skype"
+                    },
+                    "stumbleupon": {
+                        "title": "StumbleUpon",
+                        "has_counter": true
+                    },
+                    "mix": {
+                        "title": "Mix"
+                    },
+                    "telegram": {
+                        "title": "Telegram"
+                    },
+                    "pocket": {
+                        "title": "Pocket",
+                        "has_counter": true
+                    },
+                    "xing": {
+                        "title": "XING",
+                        "has_counter": true
+                    },
+                    "whatsapp": {
+                        "title": "WhatsApp"
+                    },
+                    "email": {
+                        "title": "Email"
+                    },
+                    "print": {
+                        "title": "Print"
+                    }
+                },
+                "woocommerce": {
+                    "menu_cart": {
+                        "cart_page_url": "https:\/\/truemarkets3d.net\/cart\/",
+                        "checkout_page_url": "https:\/\/truemarkets3d.net\/checkout\/",
+                        "fragments_nonce": "db302a9fd7"
+                    }
+                },
+                "facebook_sdk": {
+                    "lang": "en_US",
+                    "app_id": ""
+                },
+                "lottie": {
+                    "defaultAnimationUrl": "https:\/\/truemarkets3d.net\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+                }
+            };
+        </script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.15.1' id='elementor-pro-frontend-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+        <script id="elementor-frontend-js-before" type="text/javascript">
+            var elementorFrontendConfig = {
+                "environmentMode": {
+                    "edit": false,
+                    "wpPreview": false,
+                    "isScriptDebug": false
+                },
+                "i18n": {
+                    "shareOnFacebook": "Share on Facebook",
+                    "shareOnTwitter": "Share on Twitter",
+                    "pinIt": "Pin it",
+                    "download": "Download",
+                    "downloadImage": "Download image",
+                    "fullscreen": "Fullscreen",
+                    "zoom": "Zoom",
+                    "share": "Share",
+                    "playVideo": "Play Video",
+                    "previous": "Previous",
+                    "next": "Next",
+                    "close": "Close",
+                    "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+                    "a11yCarouselPrevSlideMessage": "Previous slide",
+                    "a11yCarouselNextSlideMessage": "Next slide",
+                    "a11yCarouselFirstSlideMessage": "This is the first slide",
+                    "a11yCarouselLastSlideMessage": "This is the last slide",
+                    "a11yCarouselPaginationBulletMessage": "Go to slide"
+                },
+                "is_rtl": false,
+                "breakpoints": {
+                    "xs": 0,
+                    "sm": 480,
+                    "md": 768,
+                    "lg": 1025,
+                    "xl": 1440,
+                    "xxl": 1600
+                },
+                "responsive": {
+                    "breakpoints": {
+                        "mobile": {
+                            "label": "Mobile Portrait",
+                            "value": 767,
+                            "default_value": 767,
+                            "direction": "max",
+                            "is_enabled": true
+                        },
+                        "mobile_extra": {
+                            "label": "Mobile Landscape",
+                            "value": 880,
+                            "default_value": 880,
+                            "direction": "max",
+                            "is_enabled": false
+                        },
+                        "tablet": {
+                            "label": "Tablet Portrait",
+                            "value": 1024,
+                            "default_value": 1024,
+                            "direction": "max",
+                            "is_enabled": true
+                        },
+                        "tablet_extra": {
+                            "label": "Tablet Landscape",
+                            "value": 1200,
+                            "default_value": 1200,
+                            "direction": "max",
+                            "is_enabled": false
+                        },
+                        "laptop": {
+                            "label": "Laptop",
+                            "value": 1366,
+                            "default_value": 1366,
+                            "direction": "max",
+                            "is_enabled": false
+                        },
+                        "widescreen": {
+                            "label": "Widescreen",
+                            "value": 2400,
+                            "default_value": 2400,
+                            "direction": "min",
+                            "is_enabled": false
+                        }
+                    }
+                },
+                "version": "3.15.2",
+                "is_static": false,
+                "experimentalFeatures": {
+                    "e_dom_optimization": true,
+                    "e_optimized_assets_loading": true,
+                    "e_optimized_css_loading": true,
+                    "e_font_icon_svg": true,
+                    "additional_custom_breakpoints": true,
+                    "container": true,
+                    "e_swiper_latest": true,
+                    "theme_builder_v2": true,
+                    "editor_v2": true,
+                    "landing-pages": true,
+                    "nested-elements": true,
+                    "e_lazyload": true,
+                    "page-transitions": true,
+                    "notes": true,
+                    "loop": true,
+                    "form-submissions": true,
+                    "e_scroll_snap": true,
+                    "mega-menu": true
+                },
+                "urls": {
+                    "assets": "https:\/\/truemarkets3d.net\/wp-content\/plugins\/elementor\/assets\/"
+                },
+                "swiperClass": "swiper",
+                "settings": {
+                    "page": [],
+                    "editorPreferences": []
+                },
+                "kit": {
+                    "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                    "global_image_lightbox": "yes",
+                    "lightbox_enable_counter": "yes",
+                    "lightbox_enable_fullscreen": "yes",
+                    "lightbox_enable_zoom": "yes",
+                    "lightbox_enable_share": "yes",
+                    "lightbox_title_src": "title",
+                    "lightbox_description_src": "description",
+                    "woocommerce_notices_elements": []
+                },
+                "post": {
+                    "id": 348,
+                    "title": "Arab%20Jordan%20Investment%20Bank%20%E2%80%93%20True%20Markets%203D",
+                    "excerpt": "",
+                    "featuredImage": "https:\/\/truemarkets3d.net\/wp-content\/uploads\/2022\/01\/arab-jordan-investment-bank-3d-virtual-tour-by-matterport-scanner.jpg"
+                }
+            };
+        </script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.15.2' id='elementor-frontend-js'></script>
+        <script type='text/javascript' src='https://truemarkets3d.net/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.15.1' id='pro-elements-handlers-js'></script>
+        <script id="rs-initialisation-scripts">
+            var tpj = jQuery;
+
+            var revapi25;
+
+            if (window.RS_MODULES === undefined)
+                window.RS_MODULES = {};
+            if (RS_MODULES.modules === undefined)
+                RS_MODULES.modules = {};
+            RS_MODULES.modules["gotocontact"] = {
+                once: RS_MODULES.modules["gotocontact"] !== undefined ? RS_MODULES.modules["gotocontact"].once : undefined,
+                init: function() {
+                    window.revapi25 = window.revapi25 === undefined || window.revapi25 === null || window.revapi25.length === 0 ? document.getElementById("goto_contact") : window.revapi25;
+                    if (window.revapi25 === null || window.revapi25 === undefined || window.revapi25.length == 0) {
+                        window.revapi25initTry = window.revapi25initTry === undefined ? 0 : window.revapi25initTry + 1;
+                        if (window.revapi25initTry < 20)
+                            requestAnimationFrame(function() {
+                                RS_MODULES.modules["gotocontact"].init()
+                            });
+                        return;
+                    }
+                    window.revapi25 = jQuery(window.revapi25);
+                    if (window.revapi25.revolution == undefined) {
+                        revslider_showDoubleJqueryError("goto_contact");
+                        return;
+                    }
+                    revapi25.revolutionInit({
+                        revapi: "revapi25",
+                        DPR: "dpr",
+                        sliderLayout: "fullwidth",
+                        visibilityLevels: "1240,1024,778,480",
+                        gridwidth: "1240,1024,778,480",
+                        gridheight: "500,300,200,100",
+                        lazyType: "smart",
+                        perspective: 600,
+                        perspectiveType: "global",
+                        editorheight: "715,625,761,721",
+                        responsiveLevels: "1240,1024,778,480",
+                        progressBar: {
+                            disableProgressBar: true
+                        },
+                        navigation: {
+                            onHoverStop: false
+                        },
+                        parallax: {
+                            levels: [5, 10, 15, 20, 25, -5, -10, -15, 45, 46, 47, 48, 49, 50, 51, 30],
+                            type: "mouse",
+                            origo: "slidercenter",
+                            speed: 0
+                        },
+                        viewPort: {
+                            global: true,
+                            globalDist: "-200px",
+                            enable: true
+                        },
+                        fallbacks: {
+                            allowHTML5AutoPlayOnAndroid: true
+                        },
+                    });
+
+                }
+            }
+            // End of RevInitScript
+
+            if (window.RS_MODULES.checkMinimal !== undefined) {
+                window.RS_MODULES.checkMinimal();
+            }
+            ;</script>
+    </body>
+</html>

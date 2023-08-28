@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>سلامتك - فلترة البحث</title>
+
+  
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  
+  <!-- Stylesheets -->
+  <link href="/css/filter.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+  
+<!--bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+
+<body>
+    
+    <div class="container mt-5">
+        <strong class="row pb-3">الرئيسية / تصفية بحث المستشفيات الخاصة </strong>
+        <div class="row pb-3">
+            <button class="col-md-6 text-center border-1 p-3 active" >
+                حجز موعد
+            </button>
+            <button class="col-md-6 text-center border-0 p-3">
+                إدارة المواعيد
+            </button>
+        </div>
+        <div class="container-fluid pb-3">
+            <form class="d-flex " role="search">
+              <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search">
+              <button class="btn btn-primary searchbtn" type="submit" style="width: 10%;">بحث </button>
+            </form>
+        </div>
+        <div class="row display-flex">
+            <div class="col-md-7">
+                <img src="../img/appoitment 1.png" class="col-md-12"style="max-width: 100%;" alt="appointment image">
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title pb-2">فلترة البحث</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="doctorSelect" class="form-label">المستشفيات :</label>
+                                <select class="form-select" id="doctorSelect">
+                                    <option value="allhospitals">جميع المستشفيات</option>
+                                    <option value="hospital1">مستشفى 1</option>
+                                    <option value="hospital2">مستشفى 2</option>
+                                    <option value="hospital3">مستشفى 3</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="doctorSelect" class="form-label">الأقسام :</label>
+                                <select class="form-select" id="doctorSelect">
+                                    <option value="alldepartments">جميع الأقسام</option>
+                                    <option value="department1">قسم العيون</option>
+                                    <option value="department2">قسم العظام</option>
+                                    <option value="department3">قسم الأشعة</option>
+                                    <option value="department4">قسم القلب</option>
+                                    <option value="department5">قسم الجراحة</option>
+                                    <option value="department6">قسم الولادة</option>
+                                    <option value="department7">قسم الأطفال</option>
+                                    <option value="department8">قسم العلاج الطبيعي</option>
+                                    <option value="department9">قسم الباطني</option>
+                                    <option value="department10">قسم الجلدية</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="doctorSelect" class="form-label">الأطباء :</label>
+                                <select class="form-select" id="doctorSelect">
+                                    <option value="alldoctors">جميع الأطباء</option>
+                                    <option value="doctor1">طبيب 1</option>
+                                    <option value="doctor2">طبيب 2</option>
+                                    <option value="doctor3">طبيب 3</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dateInput" class="form-label">التاريخ :</label>
+                                <input type="date" class="form-control" id="dateInput">
+                            </div>
+                            <div class="mb-3">
+                                <label for="timeSelect" class="form-label">التوقيت :</label>
+                                <select class="form-select" id="timeSelect">
+                                    <option value="all">جميع الأوقات</option>
+                                    <option value="morning">صباحا</option>
+                                    <option value="afternoon"> بعد الظهر </option>
+                                    <option value="evening">مساء</option>
+                                </select>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary searchbtn" style="width: 35%;">ابحث</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".header-top">
+  <span class="icon fa fa-angle-up"></span>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/jquery.js"></script>
+<script src="plugins/bootstrap.min.js"></script>
+<script src="plugins/bootstrap-select.min.js"></script>
+<!-- Slick Slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- FancyBox -->
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<script src="plugins/validate.js"></script>
+<script src="plugins/wow.js"></script>
+<script src="plugins/jquery-ui.js"></script>
+<script src="plugins/timePicker.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
+
