@@ -1,8 +1,43 @@
+:root {
+
+  --primary: #0d51ac;
+  --light: #B3CDE6;
+  --dark: #FE8325;
+}
+*{
+  direction: rtl;
+}
+
 :after,
 :before,
 *{
     box-sizing: border-box;
 }
+.contain{
+  width: 90%;
+  margin: 2%;
+}
+.searchbtn{
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px rgba(241, 143, 78, 0.4);
+  border-color: #b6bfdd;
+  border-radius: 10px;
+}
+.btn.btn-primary,
+.btn.btn-outline-primary:hover
+{
+  color: #FFFFFF;
+  background-color: #FE8325;
+  border-color: #FE8325;
+}
+.btn.btn-primary:hover {
+  scale: 1.05;
+  box-shadow: 0px 5px 8px #ddc7b6;
+  background-color: #dc7221;
+}
+
 .container {
   width:50% !important;
   padding-right: 15px;
