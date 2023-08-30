@@ -35,24 +35,28 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script>
-  $(document).ready(function(){
-    $('.reserve').click(function(){
-      $('.popup_box').css("display", "block");
+    $(document).ready(function(){
+      $('.reserve').click(function(){
+        $('.popup_box').css("display", "block");
+        $('#blur').addClass("active");
+      });
+      $('.btn1').click(function(){
+        $('.popup_box').css("display", "none");
+        $('#blur').removeClass("active");
+      });
+      $('.btn2').click(function(){
+        $('.popup_box').css("display", "none");
+        $('#blur').removeClass("active");
+        // alert("لقد تم حجز الموعد بنجاح");
+        window.location.href = "/pages/success.html";
+      });
     });
-    $('.btn1').click(function(){
-      $('.popup_box').css("display", "none");
-    });
-    $('.btn2').click(function(){
-      $('.popup_box').css("display", "none");
-      alert("لقد تم حجز الموعد بنجاح");
-    });
-  });
-
-</script>
+  </script>
 </head>
 
 
 <body>
+<div id="blur">
     <div class="contain">
         <strong class="row mb-4">الرئيسية / المستشفيات الخاصة / قسم العظام</strong>
     <div >
@@ -63,9 +67,8 @@
     </div>
     </div>
     
-
     <!-- doctors card start-->
-<div class="m-4 justify-content-center">
+  <div class="m-4 justify-content-center">
     <div class="row m-4">
             <div class="card  col-lg-3 col-md-6 col-sm-12" style="border:none;">
         <div class="p-3 doctorscard">
@@ -182,10 +185,7 @@
                 </div>
             </div>
 
-    </div>
-
-
-
+     </div>
 
                 <div class="d-flex justify-content-center ">   
 
@@ -216,17 +216,12 @@
                         </nav>
                     </div>
                 </div>
-            
-
     
         <!--// doctors card end// -->
 
-    
-    
-
-
-
-    
+   
+    </div>
+</div>
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target=".header-top">
   <span class="icon fa fa-angle-up"></span>

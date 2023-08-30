@@ -46,9 +46,10 @@
     margin-top: 3.5%;
     color: var(--primary);
 }
-
-.btn.btn-primary
-{
+#blur.active {
+  filter: blur(10px) !important;
+}
+.btn.btn-primary{
     color: #FFFFFF;
     background-color: #FE8325;
     border-color: #FE8325;
