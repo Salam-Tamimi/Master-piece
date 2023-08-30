@@ -59,8 +59,8 @@
                         <a href="index.html" class="nav-item nav-link active">الصفحة الرئيسية</a>                        <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">الخدمات</a>
                             <div class="dropdown-menu m-0" >
-                                <a href="/pages/" class="dropdown-item">حجز مواعيد</a>
-                                <a href="/pages/profile.html" class="dropdown-item">ادارة المواعيد</a>
+                                <a href="/pages/filter.html" class="dropdown-item">حجز مواعيد</a>
+                                <a href="/pages/profile.html#works" class="dropdown-item">ادارة المواعيد</a>
                                 <a href="/pages/lab.html" class="dropdown-item">المختبرات الطبية</a>
                                 <a href="/pages/hospitals.html" class="dropdown-item">المستشفيات</a>
                                 <!-- <a href="404.html" class="dropdown-item">مواعيد عيادات الاختصاص</a> -->
@@ -114,7 +114,7 @@
                     <div class="row g-5 align-items-center" style="margin-top: -8%;">
                         <div class="col-lg-6 text-center text-lg-start">
                             <a href="/pages/hospitals.html" class="btn btn-outline-light rounded-pill border-2 py-4 px-6 animated slideInRight mainbtn" style="width: 60%; font-size: 25px;">المستشفيات الخاصة</a> <br> <br>
-                            <a href="" class="btn btn-outline-light rounded-pill border-2 py-4 px-6 animated slideInRight mainbtn" style="width: 60%;font-size: 25px;">المختبرات الطبية</a>
+                            <a href="/pages/lab.html" class="btn btn-outline-light rounded-pill border-2 py-4 px-6 animated slideInRight mainbtn" style="width: 60%;font-size: 25px;">المختبرات الطبية</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid animated zoomIn mainpic" src="img/home-removebg-preview.png" alt="img">
@@ -129,15 +129,15 @@
         <div class="row g-3 cards">
                 <div class="card mb-5 card1 wow fadeInRight"data-wow-delay="0.1s"style="max-width: 22rem;">
                      <h2 class="card-title">احجز موعد</h2>
-                     <button class="btn btn-primary rounded-pill mt-4" style="width: 40%;">احجزالآن</button>
+                     <a href="/pages/filter.html"><button class="btn btn-primary rounded-pill mt-4 px-4" >احجز الآن </button></a>
                 </div>
                 <div class="card mb-5 card2 wow fadeInRight"data-wow-delay="0.1s" style="max-width: 22rem;">
                     <h2 class="card-title">ابحث عن مختبر</h2>
-                    <button class="btn btn-primary rounded-pill mt-4" style="width: 40%;">ابحث الآن</button>
+                    <a href="/pages/lab.html"><button class="btn btn-primary rounded-pill mt-4 px-4" >ابحث الآن</button></a>
                </div>
                <div class="card mb-5 card3 wow fadeInRight"data-wow-delay="0.1s" style="max-width: 22rem;">
                 <h2 class="card-title">لماذا "سلامتك" ؟</h2>
-                <button class="btn btn-primary rounded-pill mt-4" style="width: 40%;">اقرأ المزيد</button>
+                <a href="/pages/about.html"><button class="btn btn-primary rounded-pill mt-4 px-4" >اقرأ المزيد</button></a>
            </div>
         </div>
         
@@ -157,13 +157,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم العيون</h4>
-                                <span>احجز موعد عند طبيب عيون</span>
+                               <a href="/pages/appointments.html"><span>احجز موعد عند طبيب عيون</span></a> 
                             </div>
                         </div>
                     </div>
@@ -173,13 +173,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم العظام</h4>
-                                <span>احجز موعد عند طبيب عظام</span>
+                               <a href="/pages/appointments.html"><span>احجز موعد عند طبيب عظام</span></a> 
                             </div>
                         </div>
                     </div>
@@ -189,13 +189,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم الأشعة</h4>
-                                <span>احجز موعد في قسم الأشعة</span>
+                               <a href="/pages/appointments.html"><span>احجز موعد في قسم الأشعة</span></a> 
                             </div>
                         </div>
                     </div>
@@ -205,13 +205,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم القلب</h4>
-                                <span>احجز موعد عند طبيب قلب</span>
+                               <a href="/pages/appointments.html"> <span>احجز موعد عند طبيب قلب</span></a>
                             </div>
                         </div>
                     </div>
@@ -221,13 +221,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم الجراحة</h4>
-                                <span>احجز موعد عند طبيب جراحة</span>
+                               <a href="/pages/appointments.html"> <span>احجز موعد عند طبيب جراحة</span></a>
                             </div>
                         </div>
                     </div>
@@ -237,13 +237,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم الولادة</h4>
-                                <span>احجز موعد في قسم الولادة</span>
+                                <a href="/pages/appointments.html"><span>احجز موعد في قسم الولادة</span></a>
                             </div>
                         </div>
                     </div>
@@ -253,13 +253,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم الأطفال</h4>
-                                <span>احجز موعد عند طبيب أطفال</span>
+                               <a href="/pages/appointments.html"><span>احجز موعد عند طبيب أطفال</span></a> 
                             </div>
                         </div>
                     </div> 
@@ -269,13 +269,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم العلاج الطبيعي</h4>
-                                <span>احجز موعد في قسم العلاج الطبيعي</span>
+                               <a href="/pages/appointments.html"> <span>احجز موعد في قسم العلاج الطبيعي</span></a>
                             </div>
                         </div>
                     </div>
@@ -285,13 +285,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم الباطني</h4>
-                                <span>احجز موعد عند طبيب باطني</span>
+                                <a href="/pages/appointments.html"><span>احجز موعد عند طبيب باطني</span></a>
                             </div>
                         </div>
                     </div>
@@ -301,13 +301,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم الجلدية</h4>
-                                <span>احجز موعد عند طبيب جلدية</span>
+                                <a href="/pages/appointments.html"><span>احجز موعد عند طبيب جلدية</span></a>
                             </div>
                         </div>
                     </div>
@@ -317,13 +317,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم التجميل</h4>
-                                <span>احجز موعد عند طبيب تجميل</span>
+                                <a href="/pages/appointments.html"><span>احجز موعد عند طبيب تجميل</span></a>
                             </div>
                         </div>
                     </div>
@@ -333,13 +333,13 @@
                                 <div class="service-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16"><path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/></svg> 
                                 </div>
-                                <a class="service-btn" href="">
+                                <a class="service-btn" href="/pages/appointments.html">
                                     <i class="fa fa-link fa-2x"></i>
                                 </a>
                             </div>
                             <div class="p-5">
                                 <h4 class="mb-3">قسم الطب النفسي</h4>
-                                <span>احجز موعد عند طبيب نفسي</span>
+                                <a href="/pages/appointments.html"><span>احجز موعد عند طبيب نفسي</span></a>
                             </div>
                         </div>
                     </div>
