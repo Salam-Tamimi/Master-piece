@@ -15,8 +15,6 @@
 .rtl{
     direction: rtl;
 }
-
-
   .containerbg {
     /* background: var(--primary) !important; */
     display: flex;
