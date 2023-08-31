@@ -4032,7 +4032,7 @@ a.primary-link {
 
 .pagination-outer{ text-align: center; }
 .pagination{
-    font-family: 'Agdasima', sans-serif;
+    /* font-family: 'Agdasima', sans-serif; */
     display: inline-flex;
     position: relative;
 }

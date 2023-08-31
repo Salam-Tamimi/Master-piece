@@ -1,5 +1,4 @@
 :root {
-
     --primary: #0d51ac;
     --light: #B3CDE6;
     --dark: #FE8325;
@@ -8,7 +7,7 @@
 
 /*** Navbar ***/
 nav{
-    background-color: var(--primary);
+    background-color: var(--primary) !important;
 }
 .navbar .navbar-nav .nav-link {
     position: relative;
