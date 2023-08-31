@@ -47,7 +47,6 @@
       $('.btn2').click(function(){
         $('.popup_box').css("display", "none");
         $('#blur').removeClass("active");
-        // alert("لقد تم حجز الموعد بنجاح");
         window.location.href = "/pages/success.html";
       });
     });
@@ -128,7 +127,7 @@
     <!-- doctors card start-->
   <div class="m-4 justify-content-center">
     <div class="row m-4">
-            <div class="card  col-lg-3 col-md-6 col-sm-12" style="border:none;">
+            <div class="card  col-lg-3 col-md-6 col-sm-12" style="border:none;text-align: right;">
         <div class="p-3 doctorscard">
             <div>
                 <h5 class="card-title">مستشفى  الراهبات الوردية</h5>
@@ -156,7 +155,7 @@
             </div>
         </div>
 
-        <div class="card col-lg-3 col-md-6 col-sm-12" style="border:none;">
+        <div class="card col-lg-3 col-md-6 col-sm-12" style="border:none;text-align: right;">
             <div class=" p-3 doctorscard">
                 <div>
                     <h5 class="card-title">المستشفى  التخصصي</h5>
@@ -185,7 +184,7 @@
             </div>
         </div>
 
-            <div class="card  col-lg-3 col-md-6 col-sm-12" style="border:none;">
+            <div class="card  col-lg-3 col-md-6 col-sm-12" style="border:none;text-align: right;">
                 <div class=" p-3 doctorscard">
                     <div>
                         <h5 class="card-title">مستشفى ابن النفيس</h5>
@@ -214,7 +213,7 @@
                         </div>
                 </div>
             </div>
-            <div class="card col-lg-3 col-md-6 col-sm-12" style="border:none;">
+            <div class="card col-lg-3 col-md-6 col-sm-12" style="border:none;text-align: right;">
                 <div class=" p-3 doctorscard">
                     <div>
                         <h5 class="card-title">المستشفى  التخصصي</h5>
@@ -247,11 +246,6 @@
 
                 <div class="d-flex justify-content-center ">   
 
-                    <!-- <button class="prevbtn"><svg height="80px" width="80px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#0d51ac;" d="M478.733,170.634H387.7c-9.059,0-16.406-7.345-16.406-16.406s7.346-16.406,16.406-16.406h91.033 c9.059,0,16.406,7.345,16.406,16.406S487.792,170.634,478.733,170.634z"></path> <path style="fill:#B3CDE6;" d="M188.332,256l109.01-106.068V32.49c0-14.271-17.229-21.447-27.358-11.394L33.267,256l236.715,234.904 c10.13,10.052,27.358,2.878,27.358-11.394V362.068L188.332,256z"></path> <g> <path style="fill:#0d51ac;" d="M478.733,341.366H299.59L211.858,256l96.925-94.31c3.174-3.089,4.964-7.328,4.964-11.758V32.49 C313.746,14.575,299.135,0,281.174,0c-8.528,0-16.606,3.357-22.746,9.45L21.711,244.355c-3.104,3.079-4.849,7.273-4.849,11.645 c0,4.372,1.746,8.565,4.849,11.645L258.426,502.55c6.141,6.093,14.219,9.45,22.746,9.45c0,0,0,0,0.002,0 c8.332,0,16.281-3.137,22.377-8.833c6.574-6.142,10.194-14.543,10.194-23.657V374.177h164.985c9.059,0,16.406-7.345,16.406-16.406 S487.792,341.366,478.733,341.366z M280.93,478.657L56.558,256L280.935,33.344v109.659L176.891,244.242 c-3.174,3.088-4.964,7.328-4.964,11.758c0,4.429,1.79,8.67,4.964,11.758l104.044,101.237L280.93,478.657z"></path> <path style="fill:#0d51ac;" d="M443.166,272.406H286.895c-9.059,0-16.406-7.345-16.406-16.406s7.346-16.406,16.406-16.406h156.271 c9.059,0,16.406,7.345,16.406,16.406S452.225,272.406,443.166,272.406z"></path> </g> </g></svg></button>
-                    <h4 class="pagenum"><strong>  صفحة رقم 1</strong></h4>
-                    <button class="nextbtn"><svg height="80px" width="80px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#0d51ac;" d="M478.733,170.634H387.7c-9.059,0-16.406-7.345-16.406-16.406s7.346-16.406,16.406-16.406h91.033 c9.059,0,16.406,7.345,16.406,16.406S487.792,170.634,478.733,170.634z"></path> <path style="fill:#B3CDE6;" d="M188.332,256l109.01-106.068V32.49c0-14.271-17.229-21.447-27.358-11.394L33.267,256l236.715,234.904 c10.13,10.052,27.358,2.878,27.358-11.394V362.068L188.332,256z"></path> <g> <path style="fill:#0d51ac;" d="M478.733,341.366H299.59L211.858,256l96.925-94.31c3.174-3.089,4.964-7.328,4.964-11.758V32.49 C313.746,14.575,299.135,0,281.174,0c-8.528,0-16.606,3.357-22.746,9.45L21.711,244.355c-3.104,3.079-4.849,7.273-4.849,11.645 c0,4.372,1.746,8.565,4.849,11.645L258.426,502.55c6.141,6.093,14.219,9.45,22.746,9.45c0,0,0,0,0.002,0 c8.332,0,16.281-3.137,22.377-8.833c6.574-6.142,10.194-14.543,10.194-23.657V374.177h164.985c9.059,0,16.406-7.345,16.406-16.406 S487.792,341.366,478.733,341.366z M280.93,478.657L56.558,256L280.935,33.344v109.659L176.891,244.242 c-3.174,3.088-4.964,7.328-4.964,11.758c0,4.429,1.79,8.67,4.964,11.758l104.044,101.237L280.93,478.657z"></path> <path style="fill:#0d51ac;" d="M443.166,272.406H286.895c-9.059,0-16.406-7.345-16.406-16.406s7.346-16.406,16.406-16.406h156.271 c9.059,0,16.406,7.345,16.406,16.406S452.225,272.406,443.166,272.406z"></path> </g> </g></svg></button> -->
-                
-                
                     <div class="demo">
                         <!-- <nav class="pagination-outer" aria-label="Page navigation"> -->
                             <ul class="pagination">
@@ -334,8 +328,9 @@
 <!-- ********* confirmation popup ********* -->
 <div class="popup_box">
     <i class="fas fa-exclamation"></i>
-    <h1>سيتم حجز موعدك</h1>
-    <label>هل انت متأكد من تثبيت الحجز؟</label>
+    <h1>هل انت متأكد من تثبيت الحجز؟</h1>
+    <label for="email">أدخل بريدك الإلكتروني</label>
+    <input type="email" name="email" id="email"placeholder="example@gmail.com">
     <div class="btns">
         <a href="#" class="btn1">إلغاء</a>
         <a href="#" class="btn2">تأكيد الحجز</a>
